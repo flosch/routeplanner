@@ -14,6 +14,7 @@ Anyway, the route planner works quite nice even given its early stage. :-)
  * Route calculation with profile support (for now, *cars* and *bicycles*)
  * JSON-API for route calculation and point discovery
  * Calculation of ETA, duration and route's bike compatiblity (in percent)
+ * Reasonably fast ([demo route through Berlin](http://route.florian-schlachter.de/#2085829735/661123177/52.40577019043/13.489837646484375/52.61097025175981/13.322982788085938/11/52.5249948180297/13.433876037597656/car), about 37km, route calculated in about 40ms [car]/1s [bike])
  * General considerations for routes:
     * Speed limitations
     * Turn constraints
@@ -30,6 +31,8 @@ Anyway, the route planner works quite nice even given its early stage. :-)
     * Barriers
  * Car profile:
     * Support for motorways, route indication for entrace/exit ramps
+
+Due to some tricks, the car profile is way faster than the bike profile. The bike profile is much more complex and therefore takes more time to calculate the best route.
 
 ## Blog posts
 
