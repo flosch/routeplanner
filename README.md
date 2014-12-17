@@ -10,7 +10,7 @@ I put up a **demo page** for the Berlin/Germany area: http://route.florian-schla
 
  * Route calculation with profile support (for now, *cars* and *bicycles*)
  * JSON-API for route calculation and point discovery
- * Calculating ETA, duration and route's bike compatiblity (in percent)
+ * Calculation of ETA, duration and route's bike compatiblity (in percent)
  * General considerations for routes:
     * Speed limitations
     * Turn constraints
