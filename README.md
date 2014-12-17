@@ -7,7 +7,7 @@ Just putting the source code online for those of you who are interested in the b
 I put up a **demo page** for the Berlin/Germany area: 
 **[http://route.florian-schlachter.de](http://route.florian-schlachter.de)** ([API available](http://route.florian-schlachter.de/api))
 
-However, the route planner works quite nice even given its early stage. :-)
+Anyway, the route planner works quite nice even given its early stage. :-)
 
 ## Features
 
