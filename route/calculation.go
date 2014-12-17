@@ -11,14 +11,7 @@ import (
 func (request *RouteRequest) expand(item *prioItem) {
 	var prev *common.Node
 
-	if item.node.ID == 2149039562 {
-		fmt.Printf("y: %d", len(item.node.Neighbours))
-	}
-
 	for _, next_id := range item.node.Neighbours {
-		if item.node.ID == 2149039562 {
-			fmt.Printf("...auf %d...", next_id)
-		}
 		next := request.osm.Nodes.Get(next_id)
 
 		if next == nil {
@@ -100,10 +93,6 @@ func (request *RouteRequest) expand(item *prioItem) {
 		}
 		f := tentative_g + int(traveltime+0.5) // 0.5, um es korrekt zu runden
 
-		if item.node.ID == 2149039562 {
-			fmt.Printf(" (%d / %.2f) ", f, float64(profile_costs)/1000.0)
-		}
-
 		// Kann man den aktuellen Knoten günstiger erreichen über item?
 		if old_g, has_g := request.g_values[next.ID]; has_g {
 			if old_g > tentative_g {
@@ -122,9 +111,6 @@ func (request *RouteRequest) expand(item *prioItem) {
 			request.prio_items[next.ID] = request.openlist.add(item, next, f, hintMgr)
 			request.g_values[next.ID] = tentative_g
 		}
-	}
-	if item.node.ID == 2149039562 {
-		fmt.Printf("\n")
 	}
 }
 
