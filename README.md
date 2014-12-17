@@ -4,12 +4,28 @@ A simple route planner software with a focus on bicycles written in Go (based on
 
 Just putting the source code online for those of you who are interested in basic techniques. My approach is far from complete or ready for being used in production.
 
-I put up a **demo page** for the Berlin/Germany area: http://route.florian-schlachter.de
+I put up a **demo page** for the Berlin/Germany area: http://route.florian-schlachter.de ([API available](http://route.florian-schlachter.de/api))
 
 ## Features
 
- * Route calculation specifically for *cars* and *bicycles*.
- * ... TBD
+ * Route calculation with profile support (for now, *cars* and *bicycles*)
+ * JSON-API for route calculation and point discovery
+ * Calculating ETA, duration and route's bike compatiblity (in percent)
+ * General considerations for routes:
+    * Speed limitations
+    * Turn constraints
+    * Driving directions
+    * Traffic signals
+    * Way types (private/public accesses)
+ * Bicycle profile:
+    * Street conditions
+    * Shortcuts using footways
+    * Lightning conditions
+    * Prefers "nice" ways (i.e. green and calm areas)
+    * Level crossings
+    * Barriers
+ * Car profile:
+    * Support for motorways, route indication for entrace/exit ramps
 
 ## Blog posts
 
