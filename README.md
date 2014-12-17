@@ -17,6 +17,7 @@ I put up a **demo page** for the Berlin/Germany area: http://route.florian-schla
     * Driving directions
     * Traffic signals
     * Way types (private/public accesses)
+    * Indication for tunnel entrances/exits
  * Bicycle profile:
     * Street conditions
     * Shortcuts using footways
