@@ -2,9 +2,12 @@
 
 A simple route planning software with a focus on bicycles written in Go (based on OpenStreetMap data).
 
-Just putting the source code online for those of you who are interested in the basic techniques and reading the code. I developed this route planner mainly for learning purposes. Hence my approach is far from complete or ready for being used in production; it's likely that this code won't run on your computer because of invalid paths etc (I have to clean up the code first). I'm currently working on a new version where I try to take all leasons learned into account.
+Just putting the source code online for those of you who are interested in the basic techniques and reading the code. I developed this route planner mainly for learning purposes. I never planned to release the code which is why most of the code comments are in German (sorry). Hence my approach is far from complete or ready for being used in production; it's likely that this code won't run on your computer because of invalid paths etc (I have to clean up the code first). I'm currently working on a new version where I try to take all leasons learned into account.
 
-I put up a **demo page** for the Berlin/Germany area: http://route.florian-schlachter.de ([API available](http://route.florian-schlachter.de/api)) Works quite nice even given its early stage. :-)
+I put up a **demo page** for the Berlin/Germany area: 
+**[http://route.florian-schlachter.de](http://route.florian-schlachter.de)** ([API available](http://route.florian-schlachter.de/api))
+
+However, the route planner works quite nice even given its early stage. :-)
 
 ## Features
 
